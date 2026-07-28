@@ -1,9 +1,7 @@
 # Good Posture
 
-Good Posture is a local-first Windows desktop app that helps you notice when
-your seated posture may have drifted from your own comfortable baseline. It uses
-your camera and on-device pose estimation to offer calm, optional movement
-prompts, without uploading camera frames or requiring an account.
+Good Posture is a local-first Windows desktop app that helps you notice when you start slouching. It uses
+your camera and on-device pose estimation to notify you, without uploading camera frames or requiring an account.
 
 <p align="center">
   <img src="src/goodposture/assets/illustrations/posture-upright.png" width="260" alt="Good Posture's upright seated illustration" />
