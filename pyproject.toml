@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools==80.10.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "goodposture"
+version = "0.1.6"
+description = "A local-first Windows posture-awareness prototype"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "mediapipe==0.10.35",
+    "opencv-contrib-python==5.0.0.93",
+    "PySide6==6.11.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy==2.3.0",
+    "pip-audit==2.10.1",
+    "pip-licenses==5.5.5",
+    "pyinstaller==6.21.0",
+    "pytest==9.1.1",
+    "ruff==0.16.0",
+]
+
+[project.scripts]
+goodposture = "goodposture.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+goodposture = ["py.typed", "assets/illustrations/*.png"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+packages = ["goodposture"]
+
+[[tool.mypy.overrides]]
+module = ["mediapipe", "mediapipe.*"]
+ignore_missing_imports = true

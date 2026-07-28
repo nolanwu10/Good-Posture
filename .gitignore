@@ -1,0 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+build-*/
+dist-*/
+*.spec
+tmp/
+
+# Local environments and editor state
+.venv/
+.idea/
+.vscode/
+.codex/
+.claude/
+.cursor/
+.agents/
+AGENTS.md
+AGENTS.local.md
+STATUS.md
+# Local instructions and context (at any directory depth)
+agents.md
+CONTEXT.md
+context.md
+
+# Private planning artifacts (keep public product and user documentation explicit)
+build-plan.md
+BuildPlan.md
+task-plan.md
+TaskPlan.md
+tasks/
+
+# Internal process/release records (README.md is the only public Markdown file)
+RELEASE_NOTES.md
+SECURITY.md
+TODO.md
+todo.md
+TASKS.md
+tasks.md
+docs/PUBLIC_RELEASE_CHECKLIST.md
+docs/lived-use-pilot.md
+docs/task-13-verification.md
+evaluation/README.md
+packaging/THIRD_PARTY_NOTICES.md
+evaluation/
+
+# Local configuration, credentials, and user data
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.jsonl
+*.pem
+*.key
+*.pfx
+*.p12
+credentials.json
+service-account*.json
+
+# Local release and diagnostic output
+artifacts/
+release/
+coverage.xml
+
+# Local model assets and runtime artifacts
+models/*.task
+*.log
+
+# OS metadata
+Thumbs.db
+.DS_Store
