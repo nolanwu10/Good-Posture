@@ -10,7 +10,6 @@ prompts, without uploading camera frames or requiring an account.
   <img src="src/goodposture/assets/illustrations/posture-slouch.png" width="260" alt="Good Posture's slouched seated illustration" />
 </p>
 
-They show the kind of gentle feedback Good Posture is designed to provide.
 
 ## What it does
 
